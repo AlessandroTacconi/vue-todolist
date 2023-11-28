@@ -28,6 +28,12 @@
                 <span :class="{ 'text-decoration-line-through': toDo.done }">
                   {{ toDo.text }}
                 </span>
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                  @click="sbarraToDo(index)"
+                ></button>
               </li>
             </ul>
           </div>
