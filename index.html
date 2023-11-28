@@ -19,6 +19,22 @@
       </header>
       <main>
         <div class="container">
+          <div class="input-group mb-3">
+            <input
+              v-model="nuovoToDo"
+              type="text"
+              class="form-control"
+              placeholder="Aggiungi un to-do"
+            />
+            <button
+              class="btn btn-primary"
+              type="button"
+              id="button-addon2"
+              @click="aggiungiToDo"
+            >
+              Aggiungi
+            </button>
+          </div>
           <div class="d-flex flex-xl-column mx-auto">
             <ul class="list-group">
               <li
